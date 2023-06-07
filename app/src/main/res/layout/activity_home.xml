@@ -1,0 +1,230 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@mipmap/logo" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_view"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="1dp"
+        android:columnCount="2"
+        android:foregroundGravity="center_vertical"
+        android:padding="10dp"
+        android:rowCount="3">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/contact_list_button"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_column="0"
+            android:layout_row="0">
+
+            <!-- Card content -->
+            <!-- You can customize the content based on your requirements -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@mipmap/contact" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact_list" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Top right card -->
+
+
+        <!-- Bottom left card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/sos_button"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_column="0"
+            android:layout_row="1">
+
+            <!-- Card content -->
+            <!-- You can customize the content based on your requirements -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@mipmap/sos1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sos" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bottom right card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/reminder_button"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_column="1"
+            android:layout_row="1">
+
+            <!-- Card content -->
+            <!-- You can customize the content based on your requirements -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@mipmap/reminder" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reminder" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Bottom left button -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/mic_button"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_column="1"
+            android:layout_row="0">
+            <!-- Button content -->
+            <!-- You can customize the content based on your requirements -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@mipmap/mic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mic" />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <!-- Bottom right button -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/menu_button"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_column="1"
+            android:layout_row="2">
+
+            <!-- Button content -->
+            <!-- You can customize the content based on your requirements -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@mipmap/menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/menu" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btn_Logout"
+            android:layout_width="170dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp"
+            app:cardUseCompatPadding="true"
+            android:layout_column="0"
+            android:layout_row="2">
+            <!-- Card content -->
+            <!-- You can customize the content based on your requirements -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@mipmap/comm" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Logout" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </GridLayout>
+
+</RelativeLayout>

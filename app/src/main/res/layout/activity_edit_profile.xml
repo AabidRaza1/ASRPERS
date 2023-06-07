@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:id="@+id/profileImageWrapper"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/add_image"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/editIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|end"
+            android:src="@mipmap/edit_icon" />
+
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageWrapper"
+        android:layout_marginTop="24dp"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginTop="16dp"
+        android:hint="Email" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailEditText"
+        android:layout_marginTop="32dp"
+        android:text="Save Changes" />
+
+</RelativeLayout>

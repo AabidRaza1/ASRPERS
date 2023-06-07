@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Medicine Reminder -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/medicine_reminder"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="45dp"/>
+
+    <EditText
+        android:id="@+id/et_med_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/et_med_name" />
+
+    <EditText
+        android:id="@+id/et_med_dose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/med_dose_hint" />
+
+    <EditText
+        android:id="@+id/et_med_timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/med_timing"
+        android:onClick="showTimePickerDialog"
+        />
+
+    <Button
+        android:id="@+id/save_med"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_med_reminder" />
+
+    <!-- Doctor Appointment Reminder -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/doctor_reminder"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="45dp"
+        android:gravity="center" />
+
+    <EditText
+        android:id="@+id/et_doc_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/doc_name_hint" />
+
+    <EditText
+        android:id="@+id/et_doc_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/doc_location_hint" />
+
+    <EditText
+        android:id="@+id/et_doc_timing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/doc_time_hint"
+        android:onClick="showTimePickerDialog"/>
+
+    <Button
+        android:id="@+id/save_doc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_doc_reminder" />
+
+</LinearLayout>

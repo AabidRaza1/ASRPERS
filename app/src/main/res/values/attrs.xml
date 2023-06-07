@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="CustomGridLayout">
+        <attr name="layout_columnSpec" format="integer" />
+    </declare-styleable>
+</resources>

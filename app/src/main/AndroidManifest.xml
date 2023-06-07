@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ASRPERS"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/login_title">
+        </activity>
+        <!-- SignupActivity -->
+        <activity
+            android:name=".Signup"
+            android:label="@string/Signup_title">
+        </activity>
+        <!-- Home Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/home_title">
+        </activity>
+        <activity
+            android:name=".ContactListActivity"
+            android:label="@string/home_title">
+        </activity>
+        <activity
+            android:name=".CommunicationActivity"
+            android:label="@string/home_title">
+        </activity>
+        <activity
+            android:name=".AddContactActivity"
+            android:label="@string/home_title">
+        </activity>
+        <activity
+            android:name=".CallActivity"
+            android:label="@string/home_title">
+        </activity>
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:label="@string/home_title">
+        </activity>
+        <activity
+            android:name=".ProfileActivity"
+            android:label="PROFILE">
+        </activity>
+        <activity
+            android:name=".EditProfileActivity"
+            android:label="UPDATE PROFILE">
+        </activity>
+        <activity
+            android:name=".ReminderActivity"
+            android:label="REMINDER">
+        </activity>
+        <activity
+            android:name=".ReminderViewActivity"
+            android:label="REMINDER">
+        </activity>
+
+
+    </application>
+
+</manifest>

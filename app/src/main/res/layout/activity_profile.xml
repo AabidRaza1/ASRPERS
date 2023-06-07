@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/add_image" />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="14sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/editProfileButton"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Edit Profile"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/generalSettingsButton"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editProfileButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="General Settings"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!-- Add more settings options below -->
+
+</RelativeLayout>
