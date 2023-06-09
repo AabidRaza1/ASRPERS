@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS" />
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
     <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -11,6 +12,10 @@
     <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+
 
 
     <application
@@ -49,23 +54,19 @@
         </activity>
         <activity
             android:name=".ContactListActivity"
-            android:label="@string/home_title">
-        </activity>
-        <activity
-            android:name=".CommunicationActivity"
-            android:label="@string/home_title">
+            android:label="@string/contact">
         </activity>
         <activity
             android:name=".AddContactActivity"
-            android:label="@string/home_title">
+            android:label="@string/contact">
         </activity>
         <activity
             android:name=".CallActivity"
-            android:label="@string/home_title">
+            android:label="@string/CallActivity">
         </activity>
         <activity
             android:name=".ForgetPasswordActivity"
-            android:label="@string/home_title">
+            android:label="@string/ForgetPasswordActivity">
         </activity>
         <activity
             android:name=".ProfileActivity"
@@ -83,6 +84,7 @@
             android:name=".ReminderViewActivity"
             android:label="REMINDER">
         </activity>
+        <receiver android:name=".ReminderBroadcastReceiver" />
 
 
     </application>
